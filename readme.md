@@ -480,7 +480,7 @@ of terrorist attacks can vary considerably across incidents.
 This project analyzed global terrorism trends between 1970 and 2017,
 focusing on attack frequency, geographic distribution, attack methods,
 and severity. The results showed that terrorist attacks increased
-significantly over time, peaking at **16,903 incidents in 2014**. Iraq
+significantly over time, peaking at 16,903 incidents in 2014. Iraq
 recorded the most attacks, followed by Pakistan and Afghanistan, while
 hijackings had the highest average fatalities per incident. The Middle
 East and North Africa and South Asia experienced the greatest
