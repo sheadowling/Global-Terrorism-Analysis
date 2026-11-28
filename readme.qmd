@@ -104,7 +104,7 @@ print(yearly_attacks)
 
 This code was used to examine how the number of recorded terrorist attacks changed between 1970 and 2017. I used groupby() to group the dataset by year and size() to count the number of incidents occurring annually. I then created a line chart with circular markers to visualize historical trends and displayed the annual attack counts to examine changes over time.
 
-The results show that recorded terrorist attacks increased considerably over the period, particularly after 2011. The highest number of incidents occurred in 2014, with 16,903 recorded attacks. Following this peak, the number of attacks declined to 10,900 in 2017. These findings suggest that terrorist activity was not consistent over time, with certain periods experiencing substantial increases in recorded incidents. Changes in reporting and database coverage may also affect the observed tren
+The results show that recorded terrorist attacks increased considerably over the period, particularly after 2011. The highest number of incidents occurred in 2014, with 16,903 recorded attacks. Following this peak, the number of attacks declined to 10,900 in 2017. These findings suggest that terrorist activity was not consistent over time, with certain periods experiencing substantial increases in recorded incidents.
 
 ## Question 2: Which countries experienced the highest number of terrorist attacks? 
 ```{python}
@@ -183,7 +183,7 @@ This code was used to examine how the number of terrorist attacks differed acros
 The heatmap uses lighter colors to represent fewer attacks and darker red colors to represent higher numbers of attacks. The results show that the Middle East, North Africa and South Asia experienced particularly high concentrations of terrorist activity, especially after 2011. The Middle East and North Africa recorded its highest number of attacks in 2014, with 6,939 incidents. These findings demonstrate that terrorist activity has varied considerably across regions and time, with certain areas experiencing significant increases in recorded incidents.
 
 ## Question 5: Is there a relationship between the number of fatalities and injuries in terrorist attacks? 
-For this question, I chose a scatter plot with a regression line to determine whether incidents with more fatalities also tend to result in more injuries.
+For this question, I chose a scatter plot to determine whether incidents with more fatalities also tend to result in more injuries.
 ```{python}
 casualty_data = data.dropna(subset=['fatalities', 'injuries'])
 
@@ -211,4 +211,4 @@ The correlation coefficient was approximately 0.534, indicating a moderate posit
 ## Conclusion 
 This project analyzed global terrorism trends between 1970 and 2017, focusing on attack frequency, geographic distribution, attack methods, and severity. The results showed that terrorist attacks increased significantly over time, peaking at 16,903 incidents in 2014. Iraq recorded the most attacks, followed by Pakistan and Afghanistan, while hijackings had the highest average fatalities per incident. The Middle East and North Africa and South Asia experienced the greatest concentrations of terrorist activity, particularly during the 2010s. Additionally, fatalities and injuries showed a moderate positive correlation.
 
-Overall, these findings highlight how terrorist activity varies across time, location, and attack type. This analysis provides valuable insights into historical security threats and patterns that could support national security research. However, because the dataset ends in 2017, future research should incorporate more recent data to examine current terrorism trends.
+Overall, these findings highlight how terrorist activity varies across time, location, and attack type. This analysis provides valuable insights into historical security threats and patterns that could support national security research. 
