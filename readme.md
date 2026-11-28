@@ -230,8 +230,7 @@ incidents occurred in 2014, with 16,903 recorded attacks. Following this
 peak, the number of attacks declined to 10,900 in 2017. These findings
 suggest that terrorist activity was not consistent over time, with
 certain periods experiencing substantial increases in recorded
-incidents. Changes in reporting and database coverage may also affect
-the observed tren
+incidents.
 
 ## Question 2: Which countries experienced the highest number of terrorist attacks?
 
@@ -431,9 +430,8 @@ areas experiencing significant increases in recorded incidents.
 
 ## Question 5: Is there a relationship between the number of fatalities and injuries in terrorist attacks?
 
-For this question, I chose a scatter plot with a regression line to
-determine whether incidents with more fatalities also tend to result in
-more injuries.
+For this question, I chose a scatter plot to determine whether incidents
+with more fatalities also tend to result in more injuries.
 
 ``` python
 casualty_data = data.dropna(subset=['fatalities', 'injuries'])
@@ -491,6 +489,4 @@ correlation.
 Overall, these findings highlight how terrorist activity varies across
 time, location, and attack type. This analysis provides valuable
 insights into historical security threats and patterns that could
-support national security research. However, because the dataset ends in
-2017, future research should incorporate more recent data to examine
-current terrorism trends.
+support national security research.
