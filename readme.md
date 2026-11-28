@@ -218,19 +218,20 @@ print(yearly_attacks)
     dtype: int64
 
 This code was used to examine how the number of recorded terrorist
-attacks changed between 1970 and 2017. I grouped the dataset by year and
-counted the number of incidents occurring annually. I then created a
-line chart to visualize historical trends and highlighted the year with
-the highest number of attacks.
+attacks changed between 1970 and 2017. I used groupby() to group the
+dataset by year and size() to count the number of incidents occurring
+annually. I then created a line chart with circular markers to visualize
+historical trends and displayed the annual attack counts to examine
+changes over time.
 
-The results show that recorded terrorist attacks increased significantly
+The results show that recorded terrorist attacks increased considerably
 over the period, particularly after 2011. The highest number of
 incidents occurred in 2014, with 16,903 recorded attacks. Following this
 peak, the number of attacks declined to 10,900 in 2017. These findings
 suggest that terrorist activity was not consistent over time, with
 certain periods experiencing substantial increases in recorded
 incidents. Changes in reporting and database coverage may also affect
-the observed trends.
+the observed tren
 
 ## Question 2: Which countries experienced the highest number of terrorist attacks?
 
@@ -278,9 +279,8 @@ terrorist attacks, with 24,636 incidents, followed by Pakistan with
 14,368 and Afghanistan with 12,731. India and Colombia also ranked among
 the countries with the most incidents. These findings indicate that
 terrorist activity has been concentrated in certain countries,
-particularly those that have experienced prolonged political instability
-or armed conflict. However, these are cumulative counts over the study
-period rather than population-adjusted rates.
+specifically those that have experienced prolonged political instability
+or armed conflict.
 
 ## Question 3: Which types of terrorist attacks resulted in the highest average number of fatalities?
 
@@ -416,13 +416,13 @@ This code was used to examine how the number of terrorist attacks
 differed across geographic regions between 2000 and 2017. I filtered the
 dataset to focus on more recent historical incidents, grouped the data
 by region and year, and counted the number of attacks. I then used
-pivot_table() to reorganize the data into a format suitable for a
-heatmap, where each row represents a geographic region and each column
-represents a year.
+unstack() to reorganize the data into a format suitable for a heatmap,
+where each row represents a geographic region and each column represents
+a year.
 
 The heatmap uses lighter colors to represent fewer attacks and darker
 red colors to represent higher numbers of attacks. The results show that
-the Middle East and North Africa and South Asia experienced particularly
+the Middle East, North Africa and South Asia experienced particularly
 high concentrations of terrorist activity, especially after 2011. The
 Middle East and North Africa recorded its highest number of attacks in
 2014, with 6,939 incidents. These findings demonstrate that terrorist
@@ -459,12 +459,12 @@ print('Correlation:', correlation)
 
     Correlation: 0.5343752155742121
 
-This code was used to examine whether terrorist incidents resulting in
-more fatalities also tend to result in more injuries. I removed
-observations with missing fatality or injury counts and created a
-scatter plot comparing the two variables. I also added a regression line
-and calculated the Pearson correlation coefficient to measure the
-strength and direction of their relationship.
+This code examines the relationship between fatalities and injuries in
+terrorist incidents. I used dropna() to remove missing values, created a
+scatter plot with adjusted transparency to improve visibility, and used
+corr() to calculate the Pearson correlation coefficient, which measures
+the strength and direction of the linear relationship between the two
+variables.
 
 The correlation coefficient was approximately 0.534, indicating a
 moderate positive relationship between fatalities and injuries. This
